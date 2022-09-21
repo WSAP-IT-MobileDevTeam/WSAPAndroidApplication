@@ -99,11 +99,6 @@ public class PlannerFragment extends Fragment {
 //                messageDialog.setMessageType(Enums.INFO_MESSAGE);
 //                messageDialog.showDialog();
 //            }
-            else if (menuCategoryImage.getCategory().equals(getString(R.string.alcohol_calculator))) {
-                messageDialog.setMessage(getString(R.string.coming_soon));
-                messageDialog.setMessageType(Enums.INFO_MESSAGE);
-                messageDialog.showDialog();
-            }
             else if (menuCategoryImage.getCategory().equals(getString(R.string.wedding_dress_picker))) {
                 messageDialog.setMessage(getString(R.string.coming_soon));
                 messageDialog.setMessageType(Enums.INFO_MESSAGE);
@@ -122,7 +117,6 @@ public class PlannerFragment extends Fragment {
 
     private boolean isComingSoon(MenuCategoryImage menuCategoryImage) {
         return  menuCategoryImage.getCategory().equals(getString(R.string.notes)) ||
-                menuCategoryImage.getCategory().equals(getString(R.string.alcohol_calculator)) ||
                 menuCategoryImage.getCategory().equals(getString(R.string.budget_allocation_plan)) ||
                 menuCategoryImage.getCategory().equals(getString(R.string.wedding_dress_picker));
     }

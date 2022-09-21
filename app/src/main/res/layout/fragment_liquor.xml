@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_liquor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.LiquorFragment">
+
+    <TextView
+        style="@style/input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="@string/percent_liquor"
+        app:layout_constraintBottom_toTopOf="@+id/et_percent_liquor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_percent_liquor"
+        style="@style/input_field"
+        android:layout_width="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/et_cost_of_alcohol_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        style="@style/input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="@string/cost_of_liquor"
+        app:layout_constraintBottom_toTopOf="@+id/et_cost_of_alcohol_3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_cost_of_alcohol_3"
+        style="@style/input_field"
+        android:layout_width="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_number_of_bottle_liquor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_percent_liquor"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_number_of_bottle_liquor_text"
+        style="@style/input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/number_of_liquor_bottle"
+        app:layout_constraintBottom_toTopOf="@+id/tv_estimated_cost_liquor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cost_of_alcohol_3"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_number_of_bottle_liquor"
+        style="@style/input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/bottle_default_value"
+        app:layout_constraintBottom_toTopOf="@+id/tv_estimated_cost_liquor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cost_of_alcohol_3"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_estimated_cost_liquor_text"
+        style="@style/input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/estimated_cost_liquor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_number_of_bottle_liquor_text"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_estimated_cost_liquor"
+        style="@style/input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/default_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_number_of_bottle_liquor"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
