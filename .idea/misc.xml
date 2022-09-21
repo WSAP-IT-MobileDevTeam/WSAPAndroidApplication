@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LIM/Documents/GitHub/WSAPAndroidApplication/app/src/main/res/layout/activity_alcohol_calculator.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/LIM/Documents/GitHub/WSAPAndroidApplication/app/src/main/res/layout/dialog_user_role_layout.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/LIM/Documents/GitHub/WSAPAndroidApplication/app/src/main/res/layout/fragment_beer.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/LIM/Documents/GitHub/WSAPAndroidApplication/app/src/main/res/layout/fragment_exhibitor_selection_all.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/LIM/Documents/GitHub/WSAPAndroidApplication/app/src/main/res/layout/fragment_liquor.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/LIM/Documents/GitHub/WSAPAndroidApplication/app/src/main/res/layout/fragment_wine.xml" value="0.358695652173913" />
         <entry key="..\:/Users/princ/AndroidStudioProjects/WSAPAndroidApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/princ/AndroidStudioProjects/WSAPAndroidApp/app/src/main/res/drawable/bg_blac_50.xml" value="0.1" />
         <entry key="..\:/Users/princ/AndroidStudioProjects/WSAPAndroidApp/app/src/main/res/drawable/bg_corner.xml" value="0.1" />

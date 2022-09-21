@@ -107,7 +107,6 @@ public class PlannerFragment extends Fragment {
         return menuCategoryImage.getCategory().equals(getString(R.string.wedding_tips)) ||
                 menuCategoryImage.getCategory().equals(getString(R.string.todo_checklist)) ||
                 menuCategoryImage.getCategory().equals(getString(R.string.notepad)) ||
-                menuCategoryImage.getCategory().equals(getString(R.string.alcohol_calculator)) ||
                 menuCategoryImage.getCategory().equals(getString(R.string.wedding_dress_picker));
     }
 

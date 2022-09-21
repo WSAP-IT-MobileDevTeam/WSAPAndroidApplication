@@ -362,4 +362,10 @@
         <item name="android:textColor">@color/blue_l1</item>
     </style>
 
+    <style name="tab_label">
+        <item name="android:layout_height">40dp</item>
+        <item name="tabTextColor">?attr/theme_text_color</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabIndicatorColor">@color/primary</item>
+    </style>
 </resources>
