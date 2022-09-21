@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "163166010320",
+    "firebase_url": "https://wsap-mobile-app-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "wsap-mobile-app",
     "storage_bucket": "wsap-mobile-app.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "163166010320-tke50dm1e5br4auvej3jd9pcmb30j3vj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wsapandroidapp",
+            "certificate_hash": "4e939a2f3099f3e6f440ffa2b7fa6f913d9ba702"
+          }
+        },
         {
           "client_id": "163166010320-u7msnha9kopodceb2ef2okd6rn6971hj.apps.googleusercontent.com",
           "client_type": 3
