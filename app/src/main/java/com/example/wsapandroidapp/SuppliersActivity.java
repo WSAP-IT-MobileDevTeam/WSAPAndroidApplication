@@ -19,6 +19,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.wsapandroidapp.Adapters.SupplierAdapter;
 import com.example.wsapandroidapp.Classes.ComponentManager;
@@ -38,6 +39,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class SuppliersActivity extends AppCompatActivity {
 
@@ -155,8 +157,16 @@ public class SuppliersActivity extends AppCompatActivity {
 
             boolean isSearched = searchSupplier.trim().length() == 0 ||
                     supplier.getSupplier().toLowerCase().contains(searchSupplier.toLowerCase());
+            boolean getChapter = false;
 
-            if (isFiltered && isSearched) suppliers.add(supplier);
+            for(int j = 0; chapters.size() > j; j++){
+                if(chapters.get(j).getId().equals(supplier.getChapter())){
+                   getChapter = searchSupplier.trim().length() == 0 ||
+                            chapters.get(j).getChapter().toLowerCase().contains(searchSupplier.toLowerCase());
+                }
+            }
+
+            if (isFiltered || isSearched || getChapter) suppliers.add(supplier);
         }
 
         if (selectedCategoryId != null) {
