@@ -166,7 +166,7 @@ public class SuppliersActivity extends AppCompatActivity {
                 }
             }
 
-            if (isFiltered || isSearched || getChapter) suppliers.add(supplier);
+            if ((isFiltered && isSearched) || (isFiltered && getChapter)) suppliers.add(supplier);
         }
 
         if (selectedCategoryId != null) {

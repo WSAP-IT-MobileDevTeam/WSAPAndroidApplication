@@ -168,8 +168,14 @@ public class SuppliersFragment extends Fragment {
 
             boolean isSearched = searchSupplier.trim().length() == 0 ||
                     supplier.getSupplier().toLowerCase().contains(searchSupplier.toLowerCase());
-
-            if (isSearched) suppliers.add(supplier);
+            boolean getChapter = false;
+            for(int j = 0; chapters.size() > j; j++){
+                if(chapters.get(j).getId().equals(supplier.getChapter())){
+                    getChapter = searchSupplier.trim().length() == 0 ||
+                            chapters.get(j).getChapter().toLowerCase().contains(searchSupplier.toLowerCase());
+                }
+            }
+            if (isSearched || getChapter) suppliers.add(supplier);
         }
 
         if (suppliers.size() == 0) {
